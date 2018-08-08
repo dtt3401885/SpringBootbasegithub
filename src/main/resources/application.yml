@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    #driver-class-name: com.mysql.jdbc.Driver
+    #url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.0.52:1521:orcl
+    username: ddd
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+
+#pagehelper:
+    #helperDialect: mysql
+    #reasonable: true
+    #supportMethodsArguments: true
+    #params: count=countSql
+emailinformation:
+   alitoinventec: ASD
+   alitofoxconn: ASD
+   tencenettoasiacom: ASD
+
